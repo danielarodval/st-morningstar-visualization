@@ -1,8 +1,2 @@
 streamlit
-pandas
-os
-plotly.express
-matplotlib.pyplot
-numpy
 requests
-base64
