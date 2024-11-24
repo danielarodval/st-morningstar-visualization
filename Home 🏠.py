@@ -2,7 +2,6 @@
 #python -m streamlit run .\st-morningstar_visualization.py
 import streamlit as st
 import requests
-import base64
 
 url = 'https://raw.githubusercontent.com/danielarodval/st-morningstar-visualization/main/README.md'
 req = requests.get(url)
