@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as pd # type: ignore
+import os
 
 st.title('Web Scraping 🌐')
 
@@ -169,3 +171,7 @@ with st.expander("URLs to Scrape"):
     [Morningstar US High Yield Bond](https://indexes.morningstar.com/indexes/details/morningstar-us-high-yield-bond-FS0000E18W?currency=USD&variant=TR&tab=performance)\n
     [Morningstar Moderate Target Risk](https://indexes.morningstar.com/indexes/details/morningstar-moderate-target-risk-FSUSA09PYI?currency=USD&variant=TR&tab=performance)
     """)
+
+st.subheader("Script Output")
+df = pd.read_csv(os.path.join('static_data','pct_change_df.csv'), index_col=0)
+st.write(df)
