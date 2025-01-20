@@ -13,6 +13,7 @@ This project demonstrates the use of Selenium in Python to scrape financial data
 - Selenium
 - BeautifulSoup
 - Pandas
+
 - Plotly
 
 ### Implementation
